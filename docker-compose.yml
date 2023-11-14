@@ -4,6 +4,12 @@ services:
   app:
     build:
       context: .
-    image: vothanhbang14dt3/bangvothanh:wedding-invitation-online
+    image: vothanhbang14dt3/bangvothanh:wedding-invitation-online-bangvi
+    ports:
+      - "8080:80"
+  app1:
+    build:
+      context: .
+    image: vothanhbang14dt3/bangvothanh:wedding-invitation-online-vibang
     ports:
       - "8080:80"
